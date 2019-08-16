@@ -1,0 +1,177 @@
+Real A,B,CA
+Entero opcion2, base, h, area, lado1, lado2, radio, contrasena, name
+Caracter c, opcion3
+cadena [20] nombre
+Inicio 
+Escriba "Digite su nombre "
+lea nombre
+llamar nueva_linea
+Escriba "ingrese un caracter del menu"
+llamar nueva_linea
+Escriba "S para la suma"
+llamar nueva_linea
+Escriba "R para la resta"
+llamar nueva_linea
+Escriba "M para la multiplicación"
+llamar nueva_linea
+Escriba "D para la division"
+llamar nueva_linea
+Escriba "O para entrar a menu de opciones de area con figuras geometricas"
+llamar nueva_linea
+Escriba "P para entrar a menu de contraseñas"
+llamar nueva_linea
+Escriba "v o V para Victor"
+Escriba "caracter distinto a RIS para terminar"
+llamar nueva_linea
+lea c
+	caso c
+		'S':	
+			Escriba "Vamos a la suma"
+			llamar nueva_linea
+			Escriba "Ingrese el primer numero"
+			llamar nueva_linea
+			lea A
+			llamar nueva_linea
+			Escriba "Ingrese el segundo numero"
+			llamar nueva_linea
+			lea B
+			llamar nueva_linea
+			CA<-A+B
+			
+			Escriba " La suma es: " , CA
+		'R':
+			Escriba "Vamos a la resta"
+			llamar nueva_linea
+			Escriba "Ingrese el primer numero"
+			llamar nueva_linea
+			lea A
+			llamar nueva_linea
+			Escriba "Ingrese el segundo numero"
+			llamar nueva_linea
+			lea B
+			llamar nueva_linea
+			CA<-A-B
+			
+			Escriba " La resta es: " ,CA
+		'M': 	
+			Escriba "Vamos a la multiplicacion"
+			llamar nueva_linea
+			Escriba "Ingrese el primer numero"
+			llamar nueva_linea
+			lea A
+			llamar nueva_linea
+			Escriba "Ingrese el segundo numero"
+			llamar nueva_linea
+			lea B
+			llamar nueva_linea 
+			CA<-A*B
+		
+			Escriba " La multiplicacion es: ",CA
+		'D': 
+			Escriba "Vamos a la division"
+			llamar nueva_linea
+			Escriba "Ingrese el primer numero"
+			llamar nueva_linea
+			lea A
+			llamar nueva_linea
+			Escriba "Ingrese el segundo numero"
+			llamar nueva_linea
+			lea B
+			llamar nueva_linea 
+			CA<-A/B
+			Escriba " La division es: ",CA
+				
+	'v','V': 
+			Escriba "Victor"
+		
+		'O': 
+			Escriba "Digite opcion a seleccionar"
+			llamar nueva_linea
+			Escriba "1 para averiguar el area del triangulo"
+			llamar nueva_linea
+			Escriba "2 para averiguar el area del cuadrado"
+			llamar nueva_linea
+			Escriba "3 para averiguar el area del circulo"
+			llamar nueva_linea 
+			lea opcion2
+			caso opcion2
+					1: 
+						Escriba "Ingrese el numero para la base"
+						lea base
+						llamar nueva_linea
+						Escriba "Ingrese el valor de la altura"
+						lea h
+						llamar nueva_linea
+						area<-(base*h)/2
+						Escriba "El area del triangulo es: ", area
+						
+					2:	
+						Escriba "Ingrese el valor del primer lado"
+						lea lado1
+						llamar nueva_linea
+						Escriba "Ingrese el valor del segundo lado"
+						lea lado2
+						llamar nueva_linea
+						area<-(lado1*lado2)^2
+						Escriba "El area del cuadrado es: ", area
+					3:
+						Escriba "Ingrese el valor del radio"
+						lea radio
+						llamar nueva_linea
+						area<- 3.1416*(radio*radio)
+						Escriba "El area del circulo es: ", area
+						
+			sino: 
+						Escriba "Opcion invalida"
+			fin caso 
+			
+			
+		'P': 
+			Escriba "Digite opcion a seleccionar"
+			llamar nueva_linea
+			Escriba "1 para la contraseña"
+			llamar nueva_linea
+			Escriba "2 para el nombre"
+			llamar nueva_linea
+			Escriba "3 para la fecha"
+			llamar nueva_linea
+			
+			llamar nueva_linea
+			lea opcion3
+			caso opcion3
+					
+					'1': 
+						Escriba "Ingrese la contraseña: "
+						lea contrasena
+						llamar nueva_linea
+						mientras (contrasena<>123) haga
+					    lea contrasena
+						Escriba "contraseña incorrecta"
+						fin mientras
+						Escriba "Contraseña correcta"
+						
+						
+					'2':	
+						Escriba "Digite su nombre"
+						lea name
+						llamar nueva_linea
+						Escriba "Su nombre es: ", name
+						
+						
+					'3':	
+						Escriba "Hoy es Jueves, 15 de Agosto"
+						
+					
+					sino: 
+						Escriba "Opcion invalida"
+			fin caso 
+				
+		
+	sino: 	
+			Escriba " Opcion invalida"
+	fin caso
+				llamar nueva_linea	
+				Escriba " Su nombre es " , nombre 
+fin
+
+				
